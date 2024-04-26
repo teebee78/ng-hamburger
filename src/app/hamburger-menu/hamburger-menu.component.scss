@@ -1,0 +1,49 @@
+:host {
+  min-width: 25px;
+  min-height: 25px;
+  aspect-ratio: 1;
+  max-width: 50px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  overflow: hidden;
+  gap: 5px;
+  padding: 5px;
+
+  border: 1px solid #444;
+  border-radius: 5px;
+  transition: all 500ms ease;
+
+  z-index: 20;
+  position: relative;
+
+  .entry {
+    min-width: 5px;
+    min-height: 5px;
+    padding: 3px;
+    border: 1px solid 999;
+    background-color: #999;
+    border-radius: 5px;
+    transition: border-color 500ms ease-in-out;
+  }
+
+  &:hover {
+    border: 1px solid aliceblue;
+    max-width: unset;
+
+    .entry {
+      border: none;
+      min-width: 40px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: unset;
+
+      &:hover {
+        background-color: #555555;
+        scale: 1.5;
+      }
+    }
+  }
+}
