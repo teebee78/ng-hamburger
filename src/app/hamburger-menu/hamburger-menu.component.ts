@@ -1,5 +1,9 @@
-import { Component, HostListener, contentChildren, signal } from '@angular/core';
-import { HamburgerMenuEntryComponent } from '../hamburger-menu-entry/hamburger-menu-entry.component';
+import { Component, HostListener, contentChildren, input, signal } from '@angular/core';
+
+export type MenuEntry = {
+  icon: string;
+  titleText?: string;
+}
 
 @Component({
   selector: 'app-hamburger-menu',
@@ -10,7 +14,7 @@ import { HamburgerMenuEntryComponent } from '../hamburger-menu-entry/hamburger-m
 })
 export class HamburgerMenuComponent {
 
-  entries = contentChildren(HamburgerMenuEntryComponent);
+  entries = input.required<MenuEntry[]>();
 
   isExpanded = signal(false);
 

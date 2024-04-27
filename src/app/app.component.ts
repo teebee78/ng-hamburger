@@ -1,15 +1,25 @@
 import { Component } from "@angular/core";
 import { RouterOutlet } from "@angular/router";
-import { HamburgerMenuComponent } from "./hamburger-menu/hamburger-menu.component";
-import { HamburgerMenuEntryComponent } from "./hamburger-menu-entry/hamburger-menu-entry.component";
+import { HamburgerMenuComponent, MenuEntry } from "./hamburger-menu/hamburger-menu.component";
 
 @Component({
   selector: "app-root",
   standalone: true,
   templateUrl: "./app.component.html",
   styleUrl: "./app.component.scss",
-  imports: [RouterOutlet, HamburgerMenuComponent, HamburgerMenuEntryComponent],
+  imports: [RouterOutlet, HamburgerMenuComponent],
 })
 export class AppComponent {
-  title = "ng-hamburger";
+
+  menuEnties: MenuEntry[] = [
+    { icon: "tsunami", titleText: "Tsunami!"},
+    { icon: "delete_forever"},
+    { icon: "clock_loader_10"},
+    { icon: "emoji_people"},
+    { icon: "volcano"},
+    { icon: "bolt"},
+    { icon: "verified"},
+    { icon: "bar_chart"},
+    { icon: "precision_manufacturing"},
+  ];
 }
