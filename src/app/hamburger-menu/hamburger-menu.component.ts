@@ -16,16 +16,15 @@ export class HamburgerMenuComponent {
 
   entries = input.required<MenuEntry[]>();
 
-  isExpanded = signal(false);
+  isExpanded = false;
 
   @HostListener('mouseenter')
   onMouseEnter() {
-    this.isExpanded.set(true);
+    this.isExpanded = true;
   }
 
   @HostListener('mouseleave')
   onMouseLeave() {
-    this.isExpanded.set(false)
+    this.isExpanded = false;
   }
-
 }
