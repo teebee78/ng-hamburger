@@ -1,9 +1,11 @@
-@for (entry of entries(); track $index) {
-<div class="entry">
-  @if (isExpanded()) {
-  <span class="material-symbols-outlined" [title]="entry.titleText() || ''"
-    >{{ entry.icon() }}
-  </span>
+<div>
+  @for (entry of entries(); track $index) {
+  <div class="entry">
+    @if (isExpanded()) {
+    <span class="material-symbols-outlined" [title]="entry.titleText() || ''"
+      >{{ entry.icon() }}
+    </span>
+    }
+  </div>
   }
 </div>
-}
