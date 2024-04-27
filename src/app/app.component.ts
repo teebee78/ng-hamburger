@@ -1,13 +1,13 @@
 import { Component } from "@angular/core";
 import { RouterOutlet } from "@angular/router";
-import { HamburgerMenuComponent, MenuEntry } from "./hamburger-menu/hamburger-menu.component";
+import { NineDotMenuComponent, MenuEntry } from "./nine-dot-menu/nine-dot-menu.component";
 
 @Component({
   selector: "app-root",
   standalone: true,
   templateUrl: "./app.component.html",
   styleUrl: "./app.component.scss",
-  imports: [RouterOutlet, HamburgerMenuComponent],
+  imports: [RouterOutlet, NineDotMenuComponent],
 })
 export class AppComponent {
 

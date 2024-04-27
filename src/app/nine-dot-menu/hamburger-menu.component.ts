@@ -10,10 +10,10 @@ export type MenuEntry = {
   selector: 'app-hamburger-menu',
   standalone: true,
   imports: [MatIconModule],
-  templateUrl: './hamburger-menu.component.html',
-  styleUrl: './hamburger-menu.component.scss'
+  templateUrl: './nine-dot-menu.component.html',
+  styleUrl: './nine-dot-menu.component.scss'
 })
-export class HamburgerMenuComponent {
+export class NineDotMenuComponent {
 
   entries = input.required<MenuEntry[]>();
 
