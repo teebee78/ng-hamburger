@@ -1,4 +1,5 @@
-import { Component, HostListener, contentChildren, input, signal } from '@angular/core';
+import { Component, HostListener, input } from '@angular/core';
+import { MatIconModule } from '@angular/material/icon';
 
 export type MenuEntry = {
   icon: string;
@@ -8,7 +9,7 @@ export type MenuEntry = {
 @Component({
   selector: 'app-hamburger-menu',
   standalone: true,
-  imports: [],
+  imports: [MatIconModule],
   templateUrl: './hamburger-menu.component.html',
   styleUrl: './hamburger-menu.component.scss'
 })

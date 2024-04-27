@@ -29,9 +29,9 @@
       transition: all 250ms ease-out;
       cursor: pointer;
 
-      span {
-        scale: 1.1;
+      mat-icon {
         color: aliceblue;
+        transition: all 500ms ease-out;
       }
     }
 
@@ -52,7 +52,7 @@
         &:hover {
           background-color: white;
 
-          span {
+          mat-icon {
             scale: 1.1;
             color: black;
           }

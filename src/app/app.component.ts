@@ -14,7 +14,7 @@ export class AppComponent {
   menuEnties: MenuEntry[] = [
     { icon: "tsunami", titleText: "Tsunami!"},
     { icon: "delete_forever"},
-    { icon: "clock_loader_10"},
+    { icon: "alarm"},
     { icon: "emoji_people"},
     { icon: "volcano"},
     { icon: "bolt"},

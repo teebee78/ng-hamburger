@@ -2,9 +2,7 @@
   @for (entry of entries(); track $index) {
   <div class="entry">
     @if (isExpanded) {
-    <span class="material-symbols-outlined" [title]="entry.titleText || ''"
-      >{{ entry.icon }}
-    </span>
+    <mat-icon [fontIcon]="entry.icon" [title]="entry.titleText || ''" />
     }
   </div>
   }
