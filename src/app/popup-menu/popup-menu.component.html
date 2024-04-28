@@ -1,0 +1,8 @@
+<mat-icon [fontIcon]="isExpanded ? 'close' : icon()" (click)="toggle()" />
+
+@if (isExpanded) {
+<div class="pointer" @fadeInOut></div>
+<div class="content" @fadeInOut>
+  <ng-content />
+</div>
+}

@@ -1,0 +1,12 @@
+:host {
+  display: flex;
+  flex-direction: column;
+
+  ::ng-deep label {
+    color: white;
+  }
+
+  ::ng-deep mat-checkbox * {
+    border-color: white;
+  }
+}
